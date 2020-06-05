@@ -1,0 +1,51 @@
+.dropdown-component {
+  display: grid;
+  width: 460px;
+  height: 35px;
+  grid-template-columns: 1fr 35px;
+  margin-top: 3rem;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  line-height: 35px;
+}
+
+.dropdown-container div {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.dropdown-container div.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown-container div option {
+  width: 100%;
+  height: 35px;
+  background-color: #fff;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dropdown-container div option:nth-child(2n + 1) {
+  background-color: #eee;
+}
+
+.dropdown-control {
+  background-color: #3f709e;
+}
+
+.dropdown-control span {
+  transform: rotate(0);
+}
+
+.dropdown-control span svg {
+  color: #fff;
+}
